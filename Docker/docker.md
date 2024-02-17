@@ -1,5 +1,7 @@
 # Docker
 
+## Установка и настройка
+
 ### Установка Docker одной командой https://docs.docker.com/desktop/install/ubuntu/
 
 ```
@@ -19,4 +21,48 @@ sudo groupadd docker
 useradd -m -s /bin/bash -g docker docker
 sudo usermod -aG docker docker
 newgrp docker
+```
+
+---
+
+## Основные команды
+
+### Статус докера
+
+```
+service docker status
+```
+
+### Посмотреть Images
+
+```
+docker images
+```
+
+### Посмотреть запущенные контейнеры Docker
+
+```
+docker ps
+```
+
+- флаг `-a` покажет остановленные контейнеры
+
+### Docker inspect предоставляет подробную информацию о конструкциях, управляемых Docker https://docs.docker.com/engine/reference/commandline/inspect/
+
+```
+docker inspect <id image>
+```
+
+### Удалить контейнер docker
+
+```
+docker rm <id image>
+```
+
+- флаг `-f` позволяет удалить запущенные контейнеры
+
+### Удалить images docker
+
+```
+docker rmi <id image>
 ```
