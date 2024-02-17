@@ -47,7 +47,7 @@ docker ps
 
 - флаг `-a` покажет остановленные контейнеры
 
-### Docker inspect предоставляет подробную информацию о конструкциях, управляемых Docker https://docs.docker.com/engine/reference/commandline/inspect/
+### Docker [inspect](https://docs.docker.com/engine/reference/commandline/inspect/) предоставляет подробную информацию о конструкциях, управляемых Docker
 
 ```
 docker inspect <id image>
