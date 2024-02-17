@@ -2,19 +2,19 @@
 
 ## Установка и настройка
 
-### Установка Docker одной командой https://docs.docker.com/desktop/install/ubuntu/
+### [Установка](https://docs.docker.com/desktop/install/ubuntu/) Docker одной командой
 
 ```
 curl -sSL https://get.docker.com/ | sh
 ```
 
-### Установка Compose plugin https://docs.docker.com/compose/install/linux/
+### Установка [Compose plugin](https://docs.docker.com/compose/install/linux/)
 
 ```
 sudo apt-get install -y docker-compose
 ```
 
-### Создание user docker https://docs.docker.com/engine/install/linux-postinstall/
+### Создание [user docker](https://docs.docker.com/engine/install/linux-postinstall/)
 
 ```
 sudo groupadd docker
@@ -65,4 +65,28 @@ docker rm <id image>
 
 ```
 docker rmi <id image>
+```
+
+### Создать Docker контейнер можно командой
+
+```
+docker run -d nginx
+```
+
+- флаг `-d` запускает в фоновом режиме
+
+### Так же контейнер можно остановить, запустить, перезапустить
+
+```
+docker start -d nginx
+```
+
+- start
+- stop
+- restart
+
+### ...
+
+```
+docker start -d nginx
 ```
