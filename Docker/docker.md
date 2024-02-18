@@ -153,14 +153,54 @@ docker network connect <имя сети> <имя контейнера>
 docker network disconnect <network id можно посмотреть через inspect> <имя контейнера>
 ```
 
+## Создание контейнера Dockerfile
+
+- FROM ubuntu:22.04 // Базовый образ(image)
+- LABEL autor=Kotoff // Описание образа, как доп информация
+- RUN apt-get update \ // Команды
+  - && apt-get install nginx -y
+- WORKDIR /var/www/html // Рабочие директории
+- COPY file/index.html // Файлы
+- RUN chmod +x /opt/script.sh // Работа с файлами
+- ENV OWNER="Kotoff" // Указываем переменные
+- EXPOSE 80 // Порты, служит для информации и ничего не открывает
+- ENTRYPOINT ["Kotoff"] // Описание команд при запуске контейнера
+  - ENTRYPOINT - это фиксированная команда и её изменить нельзя в отличии от CMD
+- CMD ["Hello my FIRST Docker"]
+  - Можно изменять/перезаписать
+
+### Запуск Dockerfile
+
+```
+docker build .
+```
+
+### Посмотреть, как создавался image
+
+```
+docker image inspect <REPOSITORY:TAG>
+```
+
 ###
 
 ```
-docker network inspect <имя сети>
+docker
 ```
 
 ###
 
 ```
-docker network inspect <имя сети>
+docker
+```
+
+###
+
+```
+docker
+```
+
+###
+
+```
+docker
 ```
