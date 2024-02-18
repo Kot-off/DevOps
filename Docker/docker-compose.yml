@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  nginx:
+    container_name: nginx
+    image: nginx:stable
+    volumes:
+      - '/opt/nginx/html:/var/www/html'
+      - '/opt/nginx/pics:/var/www/pictures'
+      - 'nginx-config:/var/www/config'
+    environment:
+      - 'NGINX_HOST=devkot.kis.am'
+      - 'NGINX_PORT=80'
+    ports:
+      - '80:80'
+      - '443:443'
+    restart: unless-stopped
+volumes:
+  nginx-config:
+networks:
+  default:
+    driver: bridge
+    name: webnet

@@ -8,12 +8,6 @@
 curl -sSL https://get.docker.com/ | sh
 ```
 
-### Установка [Compose plugin](https://docs.docker.com/compose/install/linux/)
-
-```
-sudo apt-get install -y docker-compose
-```
-
 ### Создание [user docker](https://docs.docker.com/engine/install/linux-postinstall/)
 
 ```
@@ -181,26 +175,8 @@ docker build .
 docker image inspect <REPOSITORY:TAG>
 ```
 
-###
+### Посмотреть логи контейнера
 
 ```
-docker
-```
-
-###
-
-```
-docker
-```
-
-###
-
-```
-docker
-```
-
-###
-
-```
-docker
+docker logs <id container>
 ```
