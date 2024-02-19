@@ -1,4 +1,4 @@
-# Ansible
+# Ansible <img src="https://github.com/devicons/devicon/blob/master/icons/ansible/ansible-original-wordmark.svg" title="ansible" alt="ansible" width="40" height="40"/>&nbsp;
 
 ## Установка [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 
