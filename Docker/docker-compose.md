@@ -17,15 +17,3 @@ docker compose up -d
 ```
 docker
 ```
-
-###
-
-```
-docker
-```
-
-###
-
-```
-docker
-```
